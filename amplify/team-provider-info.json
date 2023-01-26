@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-judoapp-dev-200415-authRole",
+      "UnauthRoleArn": "arn:aws:iam::540583521231:role/amplify-judoapp-dev-200415-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::540583521231:role/amplify-judoapp-dev-200415-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-judoapp-dev-200415-deployment",
+      "UnauthRoleName": "amplify-judoapp-dev-200415-unauthRole",
+      "StackName": "amplify-judoapp-dev-200415",
+      "StackId": "arn:aws:cloudformation:us-east-2:540583521231:stack/amplify-judoapp-dev-200415/17b45f70-9d1e-11ed-8be3-028a53c404b2",
+      "AmplifyAppId": "d17u05y05e6eh4"
+    }
+  }
+}
