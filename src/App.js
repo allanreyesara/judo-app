@@ -14,6 +14,7 @@ function App({ signOut, user }) {
     <>
       <h1>Hello {user.attributes.name}</h1>
       <button onClick={signOut}>Sign out</button>
+      <h1>Judo Coronado esta en cosntruccion</h1>
     </>
   );
 }
