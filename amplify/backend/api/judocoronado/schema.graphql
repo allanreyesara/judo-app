@@ -1,0 +1,51 @@
+type Users @model @auth(rules: [{allow: public}, {allow: owner}]) {
+  id: ID!
+  nombre: String
+  apellidos: String
+  correo: AWSEmail
+  tipoUsuario: String
+}
+
+type PruebasFisicas @model @auth(rules: [{allow: public}, {allow: groups, groups: ["Entrenadores"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  nombre: String!
+  resultado: String!
+  AtletasPrueba: Atletas @hasOne
+}
+
+type Categoria @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nombre: String
+  peso_max: Int
+  peso_min: Int
+  AtletasCategoria: [Atletas] @hasMany(indexName: "byCategoria", fields: ["id"])
+}
+
+type Noticias @model @auth(rules: [{allow: public}, {allow: groups, groups: ["Entrenadores"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  titulo: String!
+  contenido: String!
+  imagen: String
+}
+
+type Entrenador @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nombre: String!
+  apellidos: String!
+  correo: AWSEmail!
+  foto: String
+}
+
+type Atletas @model @auth(rules: [{allow: public}, {allow: groups, groups: ["Entrenadores"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  nombre: String!
+  apellidos: String!
+  fechaNacimiento: AWSDate!
+  cinta: String!
+  peso: Int!
+  id_categoria: ID!
+  correo: AWSEmail!
+  comentarios: String
+  foto: String
+  categoriaID: ID! @index(name: "byCategoria")
+}
