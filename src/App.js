@@ -18,7 +18,7 @@ function App({ signOut, user }) {
           <Header></Header>
         </header>
       <body>
-        
+        <h1>Test</h1>
       </body>
     </html>
 
