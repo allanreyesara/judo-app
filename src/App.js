@@ -9,9 +9,10 @@ import awsconfig from './aws-exports';
 Amplify.configure(awsconfig);
 
 function App({ signOut, user }) {
+  console.log(user);
   return (
     <>
-      <h1>Hello {user.username}</h1>
+      <h1>Hello {user.attributes.name}</h1>
       <button onClick={signOut}>Sign out</button>
     </>
   );

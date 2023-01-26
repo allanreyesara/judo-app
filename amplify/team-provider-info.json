@@ -10,6 +10,11 @@
       "StackName": "amplify-judocoronado-staging-22331",
       "StackId": "arn:aws:cloudformation:us-east-2:540583521231:stack/amplify-judocoronado-staging-22331/6db4e780-9d20-11ed-9590-061c838764e0",
       "AmplifyAppId": "d3pyli4plfahel"
+    },
+    "categories": {
+      "auth": {
+        "judocoronado": {}
+      }
     }
   }
 }
