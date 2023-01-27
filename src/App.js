@@ -1,5 +1,6 @@
 import './App.css';
-import Header from '../src/components/Header';
+import React, { Component } from 'react';
+import  Header from '../src/components/Header';
 
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
