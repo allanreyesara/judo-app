@@ -1,5 +1,11 @@
-
+body {
+  background-color: #00337C;
+}
 /*Header */
+
+.header {
+  top: 0;
+}
 
 .navbar {
   width: 100%;
@@ -9,6 +15,7 @@
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   margin-left: 0px;
+  background-color: #13005A;
 }
 
 .navigation-menu {
@@ -16,7 +23,7 @@
   gap: 1em;
   font-size: 18px;
   list-style: none;
-  color: black;
+  color: #1C82AD;
 }
 
 .navigation-menu li {
@@ -24,7 +31,23 @@
   width: 30%;
   text-align: center;
   display: inline-block;
-  color: black;
+  color: #1C82AD;
+  text-decoration: none;
+}
+
+.navigation-menu li a {
+
+  text-decoration: none;
+}
+
+
+.navigation-menu li a:visited {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  color: #1C82AD;
+  text-decoration: none;
 }
 
 ul {
@@ -36,7 +59,7 @@ ul {
   height: 20px;
 }
 
-.nav-item-options a:hover {
+.nav-item a:hover {
   text-decoration: underline;
   font-size: 22px;
   cursor: pointer;
@@ -45,35 +68,64 @@ ul {
   color: black;
 }
 
-
-
-
-
-
-
+input[type=checkbox]{
+  display: none;
+}
 
 
 
 /*Media*/
 @media screen and (max-width: 768px) {
-  .header {
-    font-size: small;
-  }
-  nav {
-    display: flex;
-    padding: 10px;
-  }
-  ul {
-    width: 100%;
+
+  .hamburger {
+    display: block;
   }
 
-  nav li {
-    padding: auto;
-    display: inline-block;
-    text-align: center;
-    width: 30%;
-    list-style: none;
+  .hamburger, .close {
+    border: none;
+    cursor: pointer;
+    /* position absolute position the icons relative to the body because they have no position relative parents*/
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    color: #1C82AD;
+
   }
+
+  .navigation-menu {
+    position: absolute;
+    /* a higher z-index put navbar above hamburger */
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100vh;*/
+    overflow: hidden;
+    /* basic menu styling*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: left;
+    /* animate slide up/down */
+    transform: translateY(-150%);
+    transition: transform 0.2s ease;
+    background-color: #13005A;
+  }
+
+  .navigation-menu:target {
+    /* show navbar */
+    transform: translateY(0);
+  }
+
+  .navigation-menu li {
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    color: #1C82AD;
+    text-decoration: none;
+  }
+
 }
 
 
