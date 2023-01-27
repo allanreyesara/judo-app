@@ -13,18 +13,16 @@ Amplify.configure(awsconfig);
 function App({ signOut, user }) {
   console.log(user);
   return (
-    <html>
+    <div className='App'>
+      <div className='Header'>
         <header>
           <Header></Header>
         </header>
-      <body>
+      </div>
+      <div className='body'>
         <h1>Test</h1>
-      </body>
-    </html>
-
-  
-    
-
+      </div>
+    </div>
   );
 }
 
