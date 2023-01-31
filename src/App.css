@@ -7,6 +7,10 @@ body {
   top: 0;
 }
 
+.hamburger, .close{
+  display: none;
+}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -77,7 +81,7 @@ input[type=checkbox]{
 /*Media*/
 @media screen and (max-width: 768px) {
 
-  .hamburger {
+  .hamburger, .close {
     display: block;
   }
 
