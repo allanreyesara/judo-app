@@ -1,14 +1,24 @@
-import { Link } from "@aws-amplify/ui-react";
-import React, { Component } from "react";
+
+import React from "react";
 import '../index.css';
 
-import { BrowserRouter as Router, Link as ReactRouterLink, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Link as ReactRouterLink } from 'react-router-dom';
 
 import { Routers } from './Routes';
 
-export function Header() {
-    return(
-        <Router>
+import { Link } from "@aws-amplify/ui-react";
+
+
+class Header extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = { }
+    }
+
+    render(){
+        return(
+            <Router>
                 <div className="header">
                     <nav className="navbar">
                         
@@ -17,7 +27,7 @@ export function Header() {
                         <ul id="navigation-menu" className="navigation-menu">
                         
                             <li className="nav-item">
-                                <img src="https://imgtr.ee/images/2023/01/26/GZ2ts.png" alt="Profile Logo" />
+                                <img src="https://raw.githubusercontent.com/allanreyesara/judo-app/main/media/loginLogo.png" alt="Profile Logo" />
                                 <ReactRouterLink to="/profile" component={ Link }> Ingresar/Registrarse </ReactRouterLink>
                             </li>
                             <li className="nav-item-title">
@@ -34,8 +44,9 @@ export function Header() {
                     </nav>
                 </div>
                 <Routers />
-        </Router>
-    );
+            </Router>
+        )
+    };
 }
 
 export default Header;

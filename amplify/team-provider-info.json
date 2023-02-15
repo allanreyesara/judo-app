@@ -1,4 +1,25 @@
 {
+  "building": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-judocoronado-building-224410-authRole",
+      "UnauthRoleArn": "arn:aws:iam::540583521231:role/amplify-judocoronado-building-224410-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::540583521231:role/amplify-judocoronado-building-224410-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-judocoronado-building-224410-deployment",
+      "UnauthRoleName": "amplify-judocoronado-building-224410-unauthRole",
+      "StackName": "amplify-judocoronado-building-224410",
+      "StackId": "arn:aws:cloudformation:us-east-2:540583521231:stack/amplify-judocoronado-building-224410/c733d270-a1b8-11ed-abd5-0a3642c12c44",
+      "AmplifyAppId": "d3pyli4plfahel"
+    },
+    "categories": {
+      "auth": {
+        "judocoronado": {}
+      },
+      "storage": {
+        "s3judocoronadostorage300f39ed": {}
+      }
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-judocoronado-staging-22331-authRole",

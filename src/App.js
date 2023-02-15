@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import  Header from '../src/components/Header';
 
 import '@aws-amplify/ui-react/styles.css';
