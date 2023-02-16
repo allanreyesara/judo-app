@@ -1,12 +1,13 @@
 import React from "react";
 import '../index.css';
+import Header from "./Header";
 
 export function Home(){
     return(
-        <div className='App'>
+      <div className='App'>
         <div className='header'>
-        <header>
-        </header>
+          <header>
+          </header>
         </div>
         <div className='body'>
           <body>
@@ -14,7 +15,6 @@ export function Home(){
             <h1> Esta página web se encuentra en construcción, ¡te esperamos pronto!</h1>
           </body>
         </div>
-        
       </div>
     );
 }
