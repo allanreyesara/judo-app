@@ -6,7 +6,7 @@ import '@aws-amplify/ui-react/styles.css';
 
 import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
-import Home from './components/Home';
+import Footer from './components/Footer';
 
 Amplify.configure(awsconfig);
 
@@ -15,6 +15,7 @@ function App() {
   return (
       <div className='App'>
         <Header />
+        
       </div>
   );
 }

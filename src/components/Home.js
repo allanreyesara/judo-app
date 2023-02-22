@@ -1,19 +1,23 @@
 import React from "react";
-import '../index.css';
-import Header from "./Header";
+import '../App.css';
+
 
 export function Home(){
     return(
       <div className='App'>
-        <div className='header'>
-          <header>
-          </header>
+        <div className="headerHome">
+          <img src="https://raw.githubusercontent.com/allanreyesara/judo-app/main/media/CoronadoIglesia.jpg" className="homeHeader"/>
         </div>
-        <div className='body'>
-          <body>
-            <img src='https://www.linkpicture.com/q/judoCoroBuilding.jpg' className="judoCoro"/>
-            <h1> Esta página web se encuentra en construcción, ¡te esperamos pronto!</h1>
-          </body>
+        <div className="body">
+          <div className="calendario">
+            <h1>Calendario</h1>
+          </div>
+          <div className="noticias">
+            <h1>Noticias</h1>
+          </div>
+          <div className="lecheros">
+            <h1>Los Lecheros</h1>
+          </div>
         </div>
       </div>
     );

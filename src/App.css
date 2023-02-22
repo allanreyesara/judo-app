@@ -77,6 +77,55 @@ input[type=checkbox]{
 }
 
 
+/*Home */
+
+.calendario {
+  float: left;
+  background-color: #13005A;
+  color: #1C82AD;
+  width: 25%;
+  height: 400px;
+  border-right: solid black 3px;
+}
+
+.noticias {
+  float: left;
+  background-color: #13005A;
+  color: #1C82AD;
+  width: 50%;
+  height: 400px;
+  border-right: solid black 3px;
+}
+
+.lecheros {
+  float: right;
+  background-color: #13005A;
+  color: #1C82AD;
+  width: 25%;
+  height: 400px;
+}
+
+.headerHome{
+  border-bottom: solid black 2px;
+  padding: 15px;
+}
+.homeHeader {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 50%;
+  height: 400px;
+  border-radius: 8px;
+}
+
+/*Footer*/
+
+.footer {
+  align-items: center;
+}
+
+
 
 /*Media*/
 @media screen and (max-width: 768px) {
