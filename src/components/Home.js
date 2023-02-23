@@ -1,6 +1,6 @@
 import React from "react";
 import '../App.css';
-
+import NewsFeed from "./News";
 
 export function Home(){
     return(
@@ -14,6 +14,7 @@ export function Home(){
           </div>
           <div className="noticias">
             <h1>Noticias</h1>
+            <NewsFeed />
           </div>
           <div className="lecheros">
             <h1>Los Lecheros</h1>

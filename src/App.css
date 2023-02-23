@@ -1,5 +1,5 @@
 body {
-  background-color: #00337C;
+  background-color: #439A97;
 }
 /*Header */
 
@@ -19,7 +19,7 @@ body {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   margin-left: 0px;
-  background-color: #13005A;
+  background-color: #62B6B7;
 }
 
 .navigation-menu {
@@ -27,7 +27,7 @@ body {
   gap: 1em;
   font-size: 18px;
   list-style: none;
-  color: #1C82AD;
+  color: black;
 }
 
 .navigation-menu li {
@@ -35,7 +35,7 @@ body {
   width: 30%;
   text-align: center;
   display: inline-block;
-  color: #1C82AD;
+  color: black;
   text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ body {
   width: 30%;
   text-align: center;
   display: inline-block;
-  color: #1C82AD;
+  color: black;
   text-decoration: none;
 }
 
@@ -81,8 +81,8 @@ input[type=checkbox]{
 
 .calendario {
   float: left;
-  background-color: #13005A;
-  color: #1C82AD;
+  background-color: #62B6B7;
+  color: black;
   width: 25%;
   height: 400px;
   border-right: solid black 3px;
@@ -90,8 +90,8 @@ input[type=checkbox]{
 
 .noticias {
   float: left;
-  background-color: #13005A;
-  color: #1C82AD;
+  background-color: #62B6B7;
+  color: black;
   width: 50%;
   height: 400px;
   border-right: solid black 3px;
@@ -99,8 +99,8 @@ input[type=checkbox]{
 
 .lecheros {
   float: right;
-  background-color: #13005A;
-  color: #1C82AD;
+  background-color: #62B6B7;
+  color: black;
   width: 25%;
   height: 400px;
 }
@@ -143,7 +143,7 @@ input[type=checkbox]{
     right: 20px;
     width: 36px;
     height: 36px;
-    color: #1C82AD;
+    color: black;
 
   }
 
@@ -163,7 +163,7 @@ input[type=checkbox]{
     /* animate slide up/down */
     transform: translateY(-150%);
     transition: transform 0.2s ease;
-    background-color: #13005A;
+    background-color: #62B6B7;
   }
 
   .navigation-menu:target {
@@ -175,9 +175,52 @@ input[type=checkbox]{
     width: 100%;
     text-align: left;
     display: inline-block;
-    color: #1C82AD;
+    color: black;
     text-decoration: none;
   }
+
+  /*Home*/
+
+  .calendario {
+    float: left;
+    background-color: #62B6B7;
+    color: black;
+    width: 25%;
+    height: 400px;
+    border-right: solid black 3px;
+  }
+  
+  .noticias {
+    float: left;
+    background-color: #62B6B7;
+    color: black;
+    width: 50%;
+    height: 400px;
+    border-right: solid black 3px;
+  }
+  
+  .lecheros {
+    float: right;
+    background-color: #62B6B7;
+    color: black;
+    width: 25%;
+    height: 400px;
+  }
+  
+  .headerHome{
+    border-bottom: solid black 2px;
+    padding: 15px;
+  }
+  .homeHeader {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 100px;
+    width: 95%;
+    height: 150px;
+    border-radius: 8px;
+  }
+
 
 }
 

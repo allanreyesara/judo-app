@@ -14,7 +14,6 @@ function Header() {
     const [attributes, setAttributes] = useState('');
 
     useEffect(() => {
-        // React advises to declare the async function directly inside useEffect
         async function getUser() {
           
           const {attributes} = await Auth.currentAuthenticatedUser();
@@ -30,11 +29,8 @@ function Header() {
         <Router>
             <div className="header">
                 <nav className="navbar">
-                    
                     <a href="#navigation-menu" className="hamburger" >&#9776;</a>
-
                     <ul id="navigation-menu" className="navigation-menu">
-                        
                         <li className="nav-item">
                             <img src="https://raw.githubusercontent.com/allanreyesara/judo-app/main/media/loginLogo.png" alt="Profile Logo" />
                             <ReactRouterLink to="/profile" component={ Link }> { attributes.name ? attributes.name : "Ingresar/Registrarse"} </ReactRouterLink>
@@ -48,7 +44,6 @@ function Header() {
                         <a className="close" href="#">
                             <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close" />
                         </a>
-                        
                     </ul>
                 </nav>
             </div>
