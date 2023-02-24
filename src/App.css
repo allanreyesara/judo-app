@@ -1,5 +1,6 @@
 body {
-  background-color: #439A97;
+  background-color: #362FD9;
+  font-family: platino, serif;
 }
 /*Header */
 
@@ -19,13 +20,13 @@ body {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   margin-left: 0px;
-  background-color: #62B6B7;
+  background-color: #0081C9;
 }
 
 .navigation-menu {
   display: flex;
   gap: 1em;
-  font-size: 18px;
+  font-size: 20px;
   list-style: none;
   color: black;
 }
@@ -40,7 +41,6 @@ body {
 }
 
 .navigation-menu li a {
-
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ input[type=checkbox]{
 
 .calendario {
   float: left;
-  background-color: #b4cfcf;
+  background-color: whitesmoke;
   color: black;
   width: 20%;
   height: 440px;
@@ -90,7 +90,7 @@ input[type=checkbox]{
 
 .noticias {
   float: left;
-  background-color: #b4cfcf;
+  background-color: whitesmoke;
   color: black;
   width: 60%;
   height: 440px;
@@ -99,7 +99,7 @@ input[type=checkbox]{
 
 .lecheros {
   float: right;
-  background-color: #b4cfcf;
+  background-color: whitesmoke;
   color: black;
   width: 20%;
   height: 440px;
@@ -108,16 +108,15 @@ input[type=checkbox]{
 .headerHome{
   border-bottom: solid black 2px;
   padding: 15px;
+  background-image: url("https://raw.githubusercontent.com/allanreyesara/judo-app/main/media/JudoCoroEquipo.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 80%;
+  background-size:cover;
+  width: 100%;
+  justify-content: center;
+  height: 500px;
 }
-.homeHeader {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  width: 50%;
-  height: 400px;
-  border-radius: 8px;
-}
+
 
 /*News Item*/
 
@@ -127,7 +126,7 @@ input[type=checkbox]{
   width: 75%;
   margin: auto;
   justify-content: center;
-  background-color: #439A97;
+  background-color: #5BC0F8;
   margin-bottom: 20px;
   border-radius: 9px;
 }
@@ -146,7 +145,7 @@ input[type=checkbox]{
   width: 75%;
   margin: auto;
   justify-content: center;
-  background-color: #6bb1ae;
+  background-color: #5BC0F8;
   margin-bottom: 20px;
   border-radius: 9px;
 }
