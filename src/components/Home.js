@@ -2,6 +2,7 @@ import React from "react";
 import '../App.css';
 import NewsFeed from "./News";
 import CalendarFeed from "./Calendar";
+import LosLecheros from "./Lecheros";
 
 export function Home(){
     return(
@@ -19,6 +20,7 @@ export function Home(){
           </div>
           <div className="lecheros">
             <h1>Los Lecheros</h1>
+            <LosLecheros />
           </div>
         </div>
       </div>

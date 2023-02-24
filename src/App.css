@@ -1,5 +1,5 @@
 body {
-  background-color: #362FD9;
+
   font-family: platino, serif;
 }
 /*Header */
@@ -154,13 +154,54 @@ input[type=checkbox]{
   padding: 2px 16px;
 }
 
-/*Footer*/
+/*Los Lecheros */
 
-.footer {
-  align-items: center;
+.lecherosItem {
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 9px;
+}
+
+.lecherosContainer{
+  padding: 2px 16px;
+}
+
+.lecherosContainer a{
+  color: black;
+}
+
+.lecherosContainer a:hover{
+  cursor: pointer;
+}
+.lecherosImagen {
+  height: 200px;
+  width: 90%;
+  margin: 10px;
+  margin-left: 20px;
+  border-radius: 9px;
 }
 
 
+
+/*Footer*/
+
+.footer {
+  background-color: #0081C9;
+  margin-top: 100%;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 5px;
+  border-top: solid black 5px;
+  height: 200px;
+}
+
+.judoCoroLogo {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
 
 /*Media*/
 @media screen and (max-width: 768px) {
