@@ -1,3 +1,10 @@
+type Calendario @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  nombre: String
+  fecha: AWSDate
+  lugar: String
+}
+
 type Users @model @auth(rules: [{allow: public}, {allow: owner}]) {
   id: ID!
   nombre: String
@@ -49,3 +56,4 @@ type Atletas @model @auth(rules: [{allow: public}, {allow: groups, groups: ["Ent
   foto: String
   categoriaID: ID! @index(name: "byCategoria")
 }
+ 

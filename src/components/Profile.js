@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import './building.css';
 
-import { withAuthenticator, Link } from '@aws-amplify/ui-react';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
 function Profile({ signOut }) {
@@ -9,7 +9,7 @@ function Profile({ signOut }) {
     <div className='App'>
       <div className='body'>
         <body>
-          <img src='https://www.linkpicture.com/q/judoCoroBuilding.jpg' className="judoCoro"/>
+          <img src='https://www.linkpicture.com/q/judoCoroBuilding.jpg' className="judoCoro" alt="Judo Coronado Group"/>
           <h1> Esta página web se encuentra en construcción, ¡te esperamos pronto!</h1>
           <button onClick={signOut}>Sign Out</button>
         </body>

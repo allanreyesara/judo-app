@@ -6,6 +6,38 @@ import { LazyLoading, LazyLoadingDisabled, AsyncItem, AsyncCollection } from "@a
 
 
 
+type EagerCalendario = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Calendario, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly nombre?: string | null;
+  readonly fecha?: string | null;
+  readonly lugar?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyCalendario = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Calendario, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly nombre?: string | null;
+  readonly fecha?: string | null;
+  readonly lugar?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Calendario = LazyLoading extends LazyLoadingDisabled ? EagerCalendario : LazyCalendario
+
+export declare const Calendario: (new (init: ModelInit<Calendario>) => Calendario) & {
+  copyOf(source: Calendario, mutator: (draft: MutableModel<Calendario>) => MutableModel<Calendario> | void): Calendario;
+}
+
 type EagerUsers = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<Users, 'id'>;

@@ -5,6 +5,8 @@
  **************************************************************************/
 
 export { default as studioTheme } from "./studioTheme";
+export { default as CalendarioCreateForm } from "./CalendarioCreateForm";
+export { default as CalendarioUpdateForm } from "./CalendarioUpdateForm";
 export { default as UsersCreateForm } from "./UsersCreateForm";
 export { default as UsersUpdateForm } from "./UsersUpdateForm";
 export { default as PruebasFisicasCreateForm } from "./PruebasFisicasCreateForm";

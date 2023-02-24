@@ -4,9 +4,10 @@ import { schema } from './schema';
 
 
 
-const { Users, PruebasFisicas, Atletas, Categoria, Noticias, Entrenador } = initSchema(schema);
+const { Calendario, Users, PruebasFisicas, Atletas, Categoria, Noticias, Entrenador } = initSchema(schema);
 
 export {
+  Calendario,
   Users,
   PruebasFisicas,
   Atletas,
