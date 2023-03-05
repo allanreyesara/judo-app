@@ -11,7 +11,6 @@ function NewsFeed() {
             async function getArticles() {
                 try{
                     const models = await DataStore.query(Noticias, Predicates.ALL);
-                    console.log(models)
                     const news = models.map((newsItem) => 
                     <div className='newsItem' key={newsItem.id}>
                         <img src={newsItem.imagen}/>

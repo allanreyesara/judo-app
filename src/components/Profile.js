@@ -24,7 +24,6 @@ function Profile({ signOut }, props) {
         <body>
           <img src='https://www.linkpicture.com/q/judoCoroBuilding.jpg' className="judoCoro" alt="Judo Coronado Group"/>
           <h1> Esta página web se encuentra en construcción, ¡te esperamos pronto!</h1>
-          
           <button onClick={signOut}>Sign Out</button>
         </body>
       </div>
