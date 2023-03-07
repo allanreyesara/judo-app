@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import '../index.css';
 
@@ -11,20 +10,16 @@ import { Auth } from "aws-amplify";
 
 
 function Header() {
-    const [attributes, setAttributes] = useState('');
-
+    const [attributes, setAttributes] = useState([]);
     useEffect(() => {
         async function getUser() {
-          
           const {attributes} = await Auth.currentAuthenticatedUser();
           setAttributes(attributes);
         };
-
         if (!attributes) {
             getUser();
         }
       }, []);
-    
     return(
         <Router>
             <div className="header">
@@ -51,6 +46,5 @@ function Header() {
         </Router>
     )
  };
-
 
 export default Header;

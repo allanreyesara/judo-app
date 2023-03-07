@@ -6,6 +6,7 @@ body {
 
 .header {
   top: 0;
+  z-index: 1;
 }
 
 .hamburger, .close{

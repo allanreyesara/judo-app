@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import  Header from '../src/components/Header';
+import Home from './components/Home';
 import '@aws-amplify/ui-react/styles.css';
 
 import { Amplify } from 'aws-amplify';
