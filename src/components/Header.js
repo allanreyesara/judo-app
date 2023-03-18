@@ -9,17 +9,7 @@ import { Link } from "@aws-amplify/ui-react";
 import { Auth } from "aws-amplify";
 
 
-function Header() {
-    const [attributes, setAttributes] = useState([]);
-    useEffect(() => {
-        async function getUser() {
-          const {attributes} = await Auth.currentAuthenticatedUser();
-          setAttributes(attributes);
-        };
-        if (!attributes) {
-            getUser();
-        }
-      }, []);
+function Header(props) {
     return(
         <Router>
             <div className="header">
@@ -28,7 +18,7 @@ function Header() {
                     <ul id="navigation-menu" className="navigation-menu">
                         <li className="nav-item">
                             <img src="https://raw.githubusercontent.com/allanreyesara/judo-app/main/media/loginLogo.png" alt="Profile Logo" />
-                            <ReactRouterLink to="/profile" component={ Link }> { attributes.name ? attributes.name : "Ingresar/Registrarse"} </ReactRouterLink>
+                            <ReactRouterLink to="/profile" component={ Link }> { props.name ? props.name : "Ingresar/Registrarse"} </ReactRouterLink>
                         </li>
                         <li className="nav-item-title">
                              <h1><ReactRouterLink to="/" component= { Link }> Judo Coronado </ReactRouterLink></h1>
